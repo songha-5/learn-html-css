@@ -1,0 +1,137 @@
+<!-- <!doctype html> -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>테이블 관련 요소 | Likelion Bootcamp</title>
+    <style>
+      .html-css {
+        width: 100px;
+        background-color: aquamarine;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid currentColor;
+        border-spacing: 0;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="/index.html">Index로 이동</a>
+    <hr />
+    <h1>테이블 관련 요소</h1>
+    <table>
+      <caption>
+        프론트엔드 시험 결과
+      </caption>
+      <colgroup>
+        <col class="name" />
+        <col class="html-css" span="2" class="html-css" />
+        <col class="js" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th scope="col">이름</th>
+          <th scope="col">HTML</th>
+          <th scope="col">CSS</th>
+          <th scope="col">Javascript</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>박연하</td>
+          <td>100</td>
+          <td>100</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>백희연</td>
+          <td>50</td>
+          <td>90</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>이찬미</td>
+          <td>20</td>
+          <td>100</td>
+          <td>100</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>합계</th>
+          <td colspan="3">10000</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <hr />
+    <table>
+      <tr>
+        <th scope="col">이름</th>
+        <th scope="col">HTML</th>
+        <th scope="col">CSS</th>
+        <th scope="col">Javascript</th>
+      </tr>
+      <tr>
+        <th>조재권</th>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <th>사민재</th>
+        <td>50</td>
+        <td>90</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <th>김효경</th>
+        <td>20</td>
+        <td>100</td>
+        <td>100</td>
+      </tr>
+    </table>
+
+    <table>
+      <caption>
+        <p class="sr-only">입문자를 위한 Git과 HTML&amp;CSS 과정</p>
+        <p class="sr-only">학습시간, 난이도, 교육비 지원, 평가항목, 수료기준, 정원, 교재 정보 등을 나타낸 표</p>
+      </caption>
+      <colgroup>
+        <col span="2" />
+        <col span="2" />
+      </colgroup>
+
+      <tr>
+        <th>학습시간</th>
+        <td scope="col">09:00 ~ 17:00 (28시간)</td>
+        <th>난이도</th>
+        <td scope="col">초급</td>
+      </tr>
+      <tr>
+        <th>교육비 지원</th>
+        <td scope="col">고용보험 비환급</td>
+        <th>평가항목</th>
+        <td scope="col">출석률 100%</td>
+      </tr>
+      <tr>
+        <th>수료기준</th>
+        <td scope="col">총점 80점 이상시 수료</td>
+        <th>정원</th>
+        <td scope="col">24명</td>
+      </tr>
+      <tr>
+        <th>교재정보</th>
+        <td colspan="3">
+          입문자를 위한 Git과 HTML&CSS<br />
+          HTML & CSS 웹사이트 개발과 디자인 기초 (35,000원)
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
