@@ -28,7 +28,7 @@
       </fieldset>
       <hr />
     </form>
-    <form action="https://formspree.io/f/xeqwwbwk" method="">
+    <form action="https://formspree.io/f/xeqwwbwk" method="" id="inputForm">
       <!-- 
       텍스트 입력서식 
       emmit : label+input#userID
@@ -38,9 +38,9 @@
       비밀번호 입력서식
       emmit : label+input.userPwd
        -->
-      <div><label for="userPwd">비밀번호</label><input type="password" id="userPwd" placeholder="최소 8자리 이상" name="비밀번호" /></div>
+      <div><label for="userPwd">비밀번호</label><input type="password" id="userPwd" placeholder="최소 8자리 이상" name="비밀번호" pattern="^(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&]).{8,}$" /></div>
 
-      <div><label for="userPhone"></label><input type="tel" id="userPhone" placeholder="예)010-0000-0000" name="전화번호" /></div>
+      <div><label for="userPhone"></label><input type="tel" id="userPhone" placeholder="예)010-0000-0000" name="전화번호" pattern="[0-9]{10}" /></div>
       <!-- 
         이메일 입력 서식
         emmit : label+input#userEmail
@@ -85,6 +85,10 @@
       <hr />
       <input type="submit" value="전송" />
       <button type="submit">제출</button>
+      <!-- 초기화 버튼 -->
+      <input type="reset" value="초기화" />
+      <!-- 일반 버튼 -->
     </form>
+    <input type="button" value="Click!" />
   </body>
 </html>
