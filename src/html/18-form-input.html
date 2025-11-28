@@ -9,16 +9,7 @@
     <a href="/index.html">Index로 이동</a>
     <hr />
     <h1>폼(input) 요소</h1>
-    이름
-비밀번호
-검색
-이메일
-연락처
-HTML
-CSS
-Javascript
-회고 1팀
-회고 2팀
+
     <!-- 한 줄 입력 서식 -->
     <form action="">
       <fieldset>
@@ -35,6 +26,65 @@ Javascript
           </label>
         </div>
       </fieldset>
+      <hr />
+    </form>
+    <form action="https://formspree.io/f/xeqwwbwk" method="">
+      <!-- 
+      텍스트 입력서식 
+      emmit : label+input#userID
+      -->
+      <div><label for="userID">아이디</label><input type="text" id="userID" placeholder="아이디 or 이메일" name="아이리" /></div>
+      <!-- 
+      비밀번호 입력서식
+      emmit : label+input.userPwd
+       -->
+      <div><label for="userPwd">비밀번호</label><input type="password" id="userPwd" placeholder="최소 8자리 이상" name="비밀번호" /></div>
+
+      <div><label for="userPhone"></label><input type="tel" id="userPhone" placeholder="예)010-0000-0000" name="전화번호" /></div>
+      <!-- 
+        이메일 입력 서식
+        emmit : label+input#userEmail
+      -->
+      <div><label for="userEmail"></label><input type="text" id="userEmail" placeholder="예)guest@likelion.net" name="메일" /></div>
+
+      <!-- 
+        URL 입력 서식 
+        emmit : label+input#userSns
+       -->
+      <div><label for="userSns"></label><input type="url" id="userSns" placeholder="예)http://www.kakao" name="SNS" /></div>
+
+      <!-- 
+        검색어 입력 서식
+      -->
+      <div><label for="search">검색어</label><input type="search" id="search" placeholder="검색어) 멋쟁이 사자처럼" /></div>
+
+      <!-- 
+        라디오 입력 서식
+        emmit : label[for="userGender"]+input#userGender
+      -->
+      <div>
+        <input type="radio" id="male" name="gender" value="man" checked />
+        <label for="male">남자</label>
+        <input type="radio" id="femal" name="gender" value="woman" />
+        <label for="femal">여자</label>
+      </div>
+
+      <!-- 
+      파일 첨부 서식
+       -->
+      <div>
+        <input type="file" value="프로필 선택" />
+      </div>
+
+      <!-- 
+        체크박스 입력 서식
+        emmit : 
+      -->
+      <div><input type="checkbox" id="html" name="frontend" /><label for="html">html</label> <input type="checkbox" id="css" name="frontend" /><label for="css">css</label> <input type="checkbox" id="javascrip" name="frontend" /><label for="javascrip">javascrip</label></div>
+
+      <hr />
+      <input type="submit" value="전송" />
+      <button type="submit">제출</button>
     </form>
   </body>
 </html>
