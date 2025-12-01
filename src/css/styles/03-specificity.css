@@ -1,3 +1,7 @@
-p {
+body p.note {
   color: red;
+}
+
+p.note {
+  color: purple;
 }
