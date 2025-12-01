@@ -8,5 +8,8 @@
   "devDependencies": {
     "prettier": "^3.6.2",
     "vite": "^7.2.4"
+  },
+  "dependencies": {
+    "degit": "^2.8.4"
   }
 }
