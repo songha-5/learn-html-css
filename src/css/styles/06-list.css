@@ -1,0 +1,17 @@
+/* 리스트 스타일 */
+.frontend ul {
+  list-style-type: square;
+}
+.frontend ol {
+  background-color: #ffc;
+  list-style-type: upper-roman;
+  list-style-position: inside;
+}
+
+.bootcamp ul {
+  list-style-image: url(/src/assets/thumbnail/new.png);
+}
+.bootcamp ol {
+  background-color: #cff;
+  list-style: square inside url(/src/assets/thumbnail/new.png);
+}
