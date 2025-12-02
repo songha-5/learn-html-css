@@ -1,1 +1,14 @@
 /* 기본 스타일 */
+.css {
+  margin: 50px;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  h1 {
+    margin-block: 20px;
+  }
+}
