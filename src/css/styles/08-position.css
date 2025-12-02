@@ -1,0 +1,43 @@
+.wrapper {
+  position: relative;
+  border: 1px solid blue;
+}
+
+/* relative */
+.frontend {
+  position: relative;
+  left: 50px;
+  top: 50px;
+  background-color: #000;
+
+  span {
+    position: relative;
+    top: -5px;
+    left: 5px;
+    background-color: #ffc;
+    display: block;
+  }
+}
+
+/* absoulte */
+.school {
+  span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #cff;
+  }
+}
+
+/* fixed */
+.likelion {
+  position: fixed;
+  width: 100px;
+  height: 50px;
+  font-weight: 700;
+  text-align: center;
+  align-content: center;
+  top: 0;
+  right: 0;
+  background-color: #ffc;
+}
