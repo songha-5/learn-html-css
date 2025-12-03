@@ -1,0 +1,25 @@
+/* float 레이아웃 */
+/* float 레프트 */
+
+/* wrapper */
+.wrapper {
+  border: 5px solid red;
+  img {
+    float: left;
+    border: 1px solid blue;
+  }
+  .like {
+    border: 1px solid green;
+  }
+}
+
+.container {
+  border: 5px solid purple;
+  img {
+    float: right;
+    border: 1px solid blue;
+  }
+  .lion {
+    border: 2px solid black;
+  }
+}
