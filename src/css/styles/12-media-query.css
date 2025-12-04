@@ -1,0 +1,24 @@
+/* CSS 미디어 쿼리 */
+/* 모든 디바이스 */
+body {
+  background: #ffc;
+}
+
+/* 모바일 디바이스 */
+@media (max-width: 400px) {
+  body {
+    background: #fcf;
+  }
+}
+/* 태블릿 디바이스 */
+@media (640px <= width < 1200px) {
+  body {
+    background: #cff;
+  }
+}
+/* 데스크탑 디바이스 */
+@media (min-width: 1200px) {
+  body {
+    background: #ccf;
+  }
+}
