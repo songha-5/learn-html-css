@@ -47,14 +47,11 @@ button {
   box-shadow: 0 0 4px 1px currentColor;
 
   .avatar-item {
-    width: 64px;
-    height: 64px;
     box-shadow: 0 0 0 1px currentColor;
     margin: 10px;
     float: left;
 
     &:nth-child(5) {
-      background-color: yellow;
       clear: left;
     }
   }

@@ -11,20 +11,61 @@
     <link rel="stylesheet" href="/src/common/index.css" />
     <link rel="stylesheet" href="/src/ui/avatars/avatars.css" />
     <script type="module" src="/src/ui/js/copy-component.js"></script>
+    <script type="module" src="/src/ui/avatars/avatars.js"></script>
   </head>
   <body>
     <a href="/index.html">Index로 이동</a>
     <h1>아바타 UI</h1>
     <h2>아바타 레이아웃</h2>
     <ul class="avatar-list">
-      <li class="avatar-item"></li>
-      <li class="avatar-item"></li>
-      <li class="avatar-item"></li>
-      <li class="avatar-item"></li>
-      <li class="avatar-item"></li>
-      <li class="avatar-item"></li>
-      <li class="avatar-item"></li>
-      <li class="avatar-item"></li>
+      <li class="avatar-item">
+        <button type="button" class="avatar" aria-label="아바타 상태 토글 : 온라인" aria-pressed="true">
+          <img src="/src/assets/face/face1.webp" width="64" height="64" alt="송하늬" />
+          <span class="avatar-state is-online"></span>
+        </button>
+      </li>
+      <li class="avatar-item">
+        <button type="button" class="avatar" aria-label="아바타 상태 토글 : 온라인" aria-pressed="true">
+          <img src="/src/assets/face/face1.webp" width="64" height="64" alt="김뫄뫄" />
+          <span class="avatar-state is-online"></span>
+        </button>
+      </li>
+      <li class="avatar-item">
+        <button type="button" class="avatar" aria-label="아바타 상태 토글 : 온라인" aria-pressed="true">
+          <img src="/src/assets/face/face1.webp" width="64" height="64" alt="김나나" />
+          <span class="avatar-state is-online"></span>
+        </button>
+      </li>
+      <li class="avatar-item">
+        <button type="button" class="avatar" aria-label="아바타 상태 토글 : 온라인" aria-pressed="true">
+          <img src="/src/assets/face/face1.webp" width="64" height="64" alt="김다다" />
+          <span class="avatar-state is-online"></span>
+        </button>
+      </li>
+      <li class="avatar-item">
+        <button type="button" class="avatar" aria-label="아바타 상태 토글 : 온라인" aria-pressed="true">
+          <img src="/src/assets/face/face1.webp" width="64" height="64" alt="김라라" />
+          <span class="avatar-state is-online"></span>
+        </button>
+      </li>
+      <li class="avatar-item">
+        <button type="button" class="avatar" aria-label="아바타 상태 토글 : 온라인" aria-pressed="true">
+          <img src="/src/assets/face/face1.webp" width="64" height="64" alt="김라라" />
+          <span class="avatar-state is-online"></span>
+        </button>
+      </li>
+      <li class="avatar-item">
+        <button type="button" class="avatar" aria-label="아바타 상태 토글 : 온라인" aria-pressed="true">
+          <img src="/src/assets/face/face1.webp" width="64" height="64" alt="김바바" />
+          <span class="avatar-state is-online"></span>
+        </button>
+      </li>
+      <li class="avatar-item">
+        <button type="button" class="avatar" aria-label="아바타 상태 토글 : 온라인" aria-pressed="true">
+          <img src="/src/assets/face/face1.webp" width="64" height="64" alt="김사사" />
+          <span class="avatar-state is-online"></span>
+        </button>
+      </li>
     </ul>
 
     <hr />
@@ -39,9 +80,9 @@
     </div>
     <h3>오프라인 상태</h3>
     <div class="ui-component">
-      <button class="avatar">
+      <button type="button" class="avatar" aria-label="아바타 상태 토글 : 온라인" aria-pressed="true">
         <img src="/src/assets/face/face1.webp" width="64" height="64" alt="아바타 이름" />
-        <span class="avatar-state"><span class="sr-only">온라인</span></span>
+        <span class="avatar-state is-online"></span>
       </button>
       <button type="button" class="copy-component">복사</button>
     </div>
@@ -55,11 +96,10 @@
     </div>
     <h3>오프라인 상태</h3>
     <div class="ui-component">
-      <button class="avatar">
+      <button type="button" class="avatar" aria-label="아바타 상태 토글 : 온라인" aria-pressed="true">
         <img src="/src/assets/face/face1.webp" width="64" height="64" alt="아바타 이름" />
-        <span class="avatar-state"><span class="sr-only">온라인</span></span>
+        <span class="avatar-state is-online"></span>
       </button>
-      <button type="button" class="copy-component">복사</button>
     </div>
   </body>
 </html>
