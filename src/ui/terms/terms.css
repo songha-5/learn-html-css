@@ -1,0 +1,25 @@
+/* 웹 관련 용어 */
+
+/* 컴포넌트 */
+.term {
+  display: flow-root;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  /* 제목 */
+  .term-subject {
+    color: #296897;
+    margin-block-start: -0.1875rem;
+    margin-block-end: 0.25rem;
+    font-weight: 700;
+    inline-size: calc(100% - 76px);
+    float: inline-end;
+  }
+  .term-brief {
+    inline-size: calc(100% - 76px);
+    float: inline-end;
+  }
+  /* 이미지 */
+  .term-thumbnail {
+    float: inline-start;
+  }
+}
