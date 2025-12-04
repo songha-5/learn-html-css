@@ -1,3 +1,9 @@
+button {
+  border: 0 solid transparent;
+  background-color: transparent;
+  padding: 0;
+}
+
 .avatar {
   --avatar-size: 64px;
   --state-size: 16px;
