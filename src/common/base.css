@@ -1,16 +1,17 @@
 /* 기본 스타일 */
-.css {
+.spacing-20 {
   margin: 50px;
-
-  a {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-  }
 
   h1 {
     margin-block: 20px;
   }
+}
+
+/* 링크 스타일 */
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
 body {
