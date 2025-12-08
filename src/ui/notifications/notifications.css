@@ -1,0 +1,39 @@
+/* 컴포넌트 */
+.notification {
+  background: var(--yellow);
+  padding: 20px;
+  display: flow-root;
+
+  svg {
+    float: left;
+  }
+
+  div {
+    box-shadow: 0 0 0 1px blue;
+    float: left;
+    margin-inline: 20px;
+    width: calc(100% - 100px);
+  }
+
+  strong {
+    color: #22be61;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  p {
+    color: #929b90;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  time {
+    box-shadow: 0 0 0 1px green;
+    float: left;
+    width: 32px;
+    color: #22be61;
+    font-size: 11px;
+    font-weight: 700;
+    text-align: right;
+  }
+}
