@@ -1,0 +1,27 @@
+/* 라이트/다크 모드 */
+
+:root {
+  color-scheme: light dark;
+}
+body {
+  color: light-dark(#333b3c, #efefec);
+  background-color: light-dark(#efedea, #223a2c);
+}
+
+/* 라이트 모드 스타일 */
+body {
+  /* background-color: yellow; */
+  /* color: green; */
+  /* 다크 모드 스타일 */
+  @media (prefers-color-scheme: dark) {
+    background: #000;
+    color: #fff;
+  }
+}
+/* 다크 모드 스타일 */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #000;
+    color: #fff;
+  }
+}
