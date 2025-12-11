@@ -1,0 +1,25 @@
+.like {
+  background-color: lightblue;
+  column-width: 200px;
+  column-fill: auto;
+  block-size: 200px;
+}
+.lion {
+  background-color: teal;
+  column-count: 3;
+  column-fill: balance;
+}
+.euid {
+  background-color: lightgreen;
+  columns: 200px 3;
+  column-gap: 40px;
+  column-rule-width: 2px;
+  column-rule-style: solid;
+  column-rule-color: red;
+  column-rule: 10px double blue;
+  h2 {
+    background-color: tomato;
+    color: white;
+    column-span: all;
+  }
+}
