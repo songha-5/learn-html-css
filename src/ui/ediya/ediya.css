@@ -12,9 +12,7 @@
 
 .news {
   display: grid;
-  grid-template-columns: 1fr 63px;
-  inline-size: 375px;
-  box-shadow: 0 0 0 1px red;
+  grid-template-columns: minmax(200px, 1fr) max-content;
   background-color: var(--blue-300);
   color: var(--white);
   padding: 16px;
@@ -36,9 +34,16 @@
     grid-template-rows: 1fr 16px;
     row-gap: 8px;
     margin-block-end: 8px;
+
+    a {
+      background-color: #878787;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
   }
   .more {
-    justify-self: end;
+    place-self: start end;
     grid-area: 1/ 2;
   }
 }
