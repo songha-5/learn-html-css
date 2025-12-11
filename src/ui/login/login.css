@@ -1,0 +1,225 @@
+/* 네이버 로고 컴포넌트  */
+:root {
+  --white: #fff;
+  --green-100: #03cc5c;
+  --green-200: #1bf008;
+  --green-300: #03cca8;
+
+  --blue-100: #e9f0fd;
+  --red-100: #ff1414;
+
+  --gray-100: #bcc3c7;
+  --gray-200: #9b9a90;
+  --gray-300: #6d7478;
+
+  --primary-color: var(--green-100);
+  --start-color: var(--green-200);
+  --end-color: var(--green-300);
+  --active-color: var(--blue-100);
+}
+
+/* 로고 컴포넌트 */
+.logo {
+  display: block;
+  width: clamp(164px, 51.25%, 230px);
+  /* 164px / 320px (가장 작은 뷰포트) => 51.25 */
+
+  svg {
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* 입력서식 */
+.input {
+  &:has(:user-invalid) .error-message {
+    visibility: visible;
+  }
+  input {
+    inline-size: 100%;
+    min-width: 0;
+    block-size: 48px;
+    border: 1px solid var(--gray-200);
+    padding-inline-start: 0.5rem;
+
+    &:read-only {
+      background: var(--gray-100);
+    }
+    /* &:user-invalid + .error-message {
+      visibility: visible;
+    } */
+  }
+
+  .error-message {
+    visibility: hidden;
+    margin-block-start: 0.5em;
+    font-size: 0.75rem;
+    color: var(--red-100);
+  }
+}
+
+/* 버튼서식 */
+.button {
+  border: 0 none;
+  flex-flow: row nowrap;
+  padding: 1rem;
+
+  &.button-fill {
+    background: var(--primary-color);
+    color: var(--white);
+  }
+
+  &:disabled {
+    background: var(--gray-200);
+  }
+
+  &:not(:disabled):hover,
+  &:not(:disabled):focus,
+  &:not(:disabled):active {
+    background: var(--green-300);
+  }
+}
+
+/* 체크박스서식 */
+.checkbox {
+  position: relative;
+  input {
+    position: absolute;
+    inline-size: 24px;
+    block-size: 24px;
+    inset-inline-start: 0;
+    inset-block-start: 0;
+    margin: 0;
+    appearance: none;
+  }
+  label {
+    display: block;
+    align-content: center;
+    block-size: 24px;
+  }
+  &.bg-icon {
+    input:checked {
+      & + label {
+        background-image: url(/src/assets/naver/checked.svg);
+      }
+    }
+    label {
+      /* 1. */
+      /* display: flex;
+      flex-flow: row nowrap;
+      align-items: center; */
+      background: url(/src/assets/naver/unchecked.svg) no-repeat;
+      padding-inline-start: 32px;
+      /* 2. */
+      /* background-size: contain; */
+    }
+  }
+  &.svg-icon {
+    label {
+      display: flex;
+      flex-flow: nowrap row;
+      align-items: center;
+      column-gap: 8px;
+    }
+
+    &:has(:checked) .area,
+    &:has(:checked) .border {
+      fill: green;
+    }
+    &:has(:checked) .marker {
+      fill: white;
+    }
+  }
+}
+
+/* 링크 텍스트 */
+.textlink-new {
+  font-weight: 700;
+}
+
+/* 스위치 */
+.switch {
+  position: relative;
+  text-align: right;
+
+  input {
+    position: absolute;
+    inset-inline-end: 0;
+    inset-block-end: 0;
+    margin: 0;
+    inline-size: 2em;
+    block-size: 24px;
+    appearance: none;
+
+    &:checked + label {
+      &::after {
+        content: 'ON';
+      }
+    }
+  }
+  label {
+    display: block;
+    inline-size: 2.5em;
+    block-size: 24px;
+    align-content: center;
+    &::after {
+      content: 'OFF';
+    }
+  }
+}
+
+/* 네이버 로그인 레이아웃 */
+.header {
+  padding-block: 70px 45px;
+  .logo {
+    margin-inline: auto;
+  }
+
+  @media (width >= 768px) {
+    padding-block: 100px 50px;
+  }
+}
+.main {
+  form {
+    display: flex;
+    flex-flow: nowrap column;
+    padding-inline: 15px;
+    row-gap: 10px;
+
+    @media (width >= 768px) {
+      width: 460px;
+      margin-inline: auto;
+    }
+    .checkbox-wrapper {
+      display: flex;
+      align-items: center;
+      margin-top: 4px;
+      order: 2;
+      .checkbox {
+        margin-inline-start: auto;
+      }
+      .textlink-new,
+      .switch {
+        display: none;
+      }
+
+      @media (width >= 768px) {
+        .textlink-new,
+        .switch {
+          display: block;
+        }
+        .checkbox {
+          margin-inline-start: 0;
+        }
+        .textlink-new {
+          margin-inline-start: auto;
+        }
+      }
+    }
+    .button {
+      inline-size: 100%;
+      order: 1;
+    }
+  }
+}
