@@ -7,7 +7,7 @@ body {
   background-image: url(../assets/ui/background-index.jpg);
   background-size: contain;
 
-  color: #fff;
+  color: #fafafa;
 
   .title {
     position: absolute;
@@ -16,6 +16,7 @@ body {
     translate: -50% 0;
     font-size: 130px;
     color: #bcbcbc;
+    letter-spacing: -0.02px;
   }
   .container {
     display: flex;
@@ -37,7 +38,7 @@ body {
       flex-grow: 1;
       flex-basis: 0;
       padding: 20px;
-      background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(22, 22, 22, 0.3) 20%);
+      background: linear-gradient(135deg, rgba(20, 20, 20, 0.7), rgba(22, 22, 22, 0.3) 20%);
       border: 1px solid rgba(90, 90, 90, 0.2);
       backdrop-filter: blur(10px);
       box-shadow: 0 4px 34px rgba(0, 0, 0, 0.15);
